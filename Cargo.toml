@@ -1,0 +1,22 @@
+[package]
+name = "test_input_service"
+version = "0.1.0"
+authors = ["pentamassiv <pentamassiv@posteo.de>"]
+edition = "2018"
+
+[dependencies]
+zwp-input-method = "0.1.0"
+gdk={version = "0.13", features= ["v3_22"]}
+gdk-sys = "0.10.0"
+gtk = { version = "0.9", features = ["v3_22"] }
+gtk-layer-shell="0.1"
+relm = "0.20"
+relm-derive = "0.20"
+wayland-client = {version="0.27.0", features = ["use_system_lib"]}
+wayland-protocols = {version="0.27.0", features = ["client", "unstable_protocols"]}
+zwp-virtual-keyboard = "0.1.0"
+glib = "0.10.1"
+libc = "0.2.74"
+
+[dependencies.input_method_service]
+path = "../input_method_service"
